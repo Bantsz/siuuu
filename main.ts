@@ -1,3 +1,24 @@
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    zombie = sprites.createProjectileFromSide(img`
+        . . . . . . 7 7 f 2 . . . . . . 
+        . . . . 7 7 7 7 f 2 2 d . . . . 
+        . . . 7 7 7 7 7 f 2 d 2 d . . . 
+        . . 7 7 7 7 7 7 7 f 2 d 2 d . . 
+        . . 7 7 7 7 7 7 7 7 f 2 d 2 . . 
+        . . 7 7 7 7 7 7 7 7 7 f 2 2 . . 
+        . . 7 7 7 7 7 7 7 7 7 7 f f . . 
+        . 7 7 7 7 b f 7 7 f b 7 7 7 7 . 
+        . 7 7 7 7 1 f 7 7 f 1 7 7 7 7 . 
+        . . 7 7 7 7 7 7 7 7 7 7 7 7 . . 
+        . . . 7 7 7 7 7 7 7 7 7 7 . . . 
+        . . 7 7 f 2 2 2 2 2 2 f 7 7 . . 
+        . . 7 7 f 2 2 2 2 2 2 f 7 7 . . 
+        . . 7 7 f 4 4 5 5 4 4 f 7 7 . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . f f . . f f . . . . . 
+        `, randint(0, 50), randint(0, 50))
+})
+let zombie: Sprite = null
 let mySprite = sprites.create(img`
     ................................
     ................................
